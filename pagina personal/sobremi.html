@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarjeta de Presentación - Joseph Nicolas Torres</title>
+  <style>
+    :root {
+      --color-principal: #f4f4f4;     
+      --color-secundario: #2c3e50;    
+      --color-acento: #e67e22;        
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--color-principal);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    
+    nav {
+      background-color: var(--color-secundario);
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--color-acento);
+    }
+
+    
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      width: 380px;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+  .card .profile {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  background-image:"imagenes/cj.jpg";
+}
+
+
+    .card h3 {
+      color: var(--color-secundario);
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .card strong {
+      color: var(--color-secundario);
+      font-weight: bold;
+    }
+
+    .section-title {
+      color: var(--color-secundario);
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      border-left: 4px solid var(--color-acento);
+      padding-left: 8px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      font-size: 14px;
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    .check {
+      color: var(--color-acento);
+      margin-right: 6px;
+      font-weight: bold;
+    }
+
+    
+    footer {
+      background-color: var(--color-secundario);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav>
+    <a href="index.html">Inicio</a>|
+    <a href="portafolio.html">Portafolio</a>|
+    <a href="contacto.html">Contacto</a>|
+  </nav>
+
+
+  <div class="container">
+    <div class="card">
+      <div class="profile"></div>
+
+      <h3>Joseph Nicolas Torres</h3>
+
+      <p>
+        Soy <b>Ingeniero de Sistemas</b> con experiencia en el desarrollo de aplicaciones web y de escritorio.
+        Me apasiona la tecnología, el aprendizaje constante y la resolución de problemas mediante soluciones digitales innovadoras.
+      </p>
+
+      <div class="section-title">Lenguajes y Tecnologías</div>
+      <ul>
+        <li><b>Frontend:</b> HTML5, CSS3, JavaScript, React</li>
+        <li><b>Backend:</b> Node.js, Python, Java</li>
+        <li><b>Bases de datos:</b> MySQL, MongoDB</li>
+        <li><b>Otros:</b> Git, Docker, Linux</li>
+      </ul>
+
+      <div class="section-title">Habilidades</div>
+      <ul>
+        <li><span class="check"></span>Desarrollo de sistemas web y móviles</li>
+        <li><span class="check"></span>Diseño y optimización de bases de datos</li>
+        <li><span class="check"></span>Trabajo en equipo y metodologías ágiles (Scrum)</li>
+        <li><span class="check"></span>Resolución de problemas y pensamiento lógico</li>
+      </ul>
+    </div>
+  </div>
+
+  
+  <footer>
+    <p> 2025 Joseph Nicolas Torres. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
